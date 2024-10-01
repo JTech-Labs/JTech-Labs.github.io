@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang=en>
-  <head>
-    <meta charset="utf-8">
-    <meta name="vueport" content="width=device-width, initial-scale=1">
-    <script type="module" src="index.js"></script>
-    <link rel="favicon" src="favicon.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-  </head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="vueport" content="width=device-width, initial-scale=1">
+        <script type="module" src="index.js"></script>
+        <link rel="favicon" src="favicon.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    </head>
+    <body>
+        <div v-scope>
+            <input v-model="name" type="text" name="text" placeholder="Name" aria-label="Text">
+            <p>Hello {{  name  }}!</p>
+        </div>
+    </body>
 </html>
